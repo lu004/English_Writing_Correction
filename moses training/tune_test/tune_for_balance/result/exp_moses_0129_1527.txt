@@ -1,0 +1,7 @@
+Precision   : 0.3306
+Recall      : 0.2866
+F_0.5       : 0.3208
+moses
+native1
+ --sctype M2SCORER --scconfig beta:1
+ /Users/lu/Desktop/model/20180129/model/moses.ini

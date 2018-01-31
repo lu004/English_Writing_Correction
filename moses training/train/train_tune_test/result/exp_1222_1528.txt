@@ -1,0 +1,48 @@
+Precision   : 0.9436
+Recall      : 0.8480
+F_0.5       : 0.9228
+--sctype M2SCORER --scconfig beta:0.5
+
+# MERT optimized configuration
+# decoder /Users/lu/moses/bin/moses
+# BLEU 0.9228 on dev /Users/lu/Desktop/data/for_test.in
+# We were before running iteration 3
+# finished 2017年 12月22日 金曜日 15時28分14秒 JST
+### MOSES CONFIG FILE ###
+#########################
+
+# input factors
+[input-factors]
+0
+
+# mapping steps
+[mapping]
+0 T 0
+
+[distortion-limit]
+6
+
+# feature functions
+[feature]
+UnknownWordPenalty
+WordPenalty
+PhrasePenalty
+PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/Users/lu/Desktop/moses_test/model/model/phrase-table.gz input-factor=0 output-factor=0
+Distortion
+KENLM name=LM0 factor=0 path=/Users/lu/Desktop/moses_test/model/for_test.out.arpa order=5
+
+# dense weights for feature functions
+
+[threads]
+8
+
+[v]
+0
+[weight]
+
+Distortion0= 0.0291812
+LM0= 0.0259825
+WordPenalty0= -0.132137
+PhrasePenalty0= 0.0436023
+TranslationModel0= 0.43184 0.0233363 0.288855 0.0250663
+UnknownWordPenalty0= 1

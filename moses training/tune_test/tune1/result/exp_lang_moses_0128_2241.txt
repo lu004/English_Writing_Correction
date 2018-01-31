@@ -1,0 +1,7 @@
+Precision   : 0.3839
+Recall      : 0.2059
+F_0.5       : 0.3273
+langtool->moses
+native2
+ 
+ /Users/lu/Desktop/model/20180127/model/moses.ini
