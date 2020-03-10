@@ -1,5 +1,5 @@
 # English writing correction
-includes:
+including:
 - data 
 - data cleaning, 
 - model: Google NMT, 
